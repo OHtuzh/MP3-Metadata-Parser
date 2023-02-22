@@ -34,7 +34,7 @@ namespace mp3_idv2_4 {
         [[nodiscard]] const std::string& GetPictureMimeType() const;
         [[nodiscard]] const std::vector<uint8_t>& GetSellerLogo() const;
 
-        void GetInformation(std::ostream& out) override;
+        void GetInformation(std::ostream& out) const override;
      private:
         TextEncoding encoding_;
         std::string price_string_;

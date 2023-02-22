@@ -11,5 +11,5 @@ namespace mp3_idv2_4 {
         return binary_data_;
     }
 
-    void MusicCD_ID_Frame::GetInformation(std::ostream& out) {}
+    void MusicCD_ID_Frame::GetInformation(std::ostream& out) const {}
 }

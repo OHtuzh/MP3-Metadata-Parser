@@ -12,7 +12,7 @@ namespace mp3_idv2_4 {
     const std::string& UserDefinedURLLinkFrame::GetDescription() const noexcept {
         return description_;
     }
-    void UserDefinedURLLinkFrame::GetInformation(std::ostream& out) {
+    void UserDefinedURLLinkFrame::GetInformation(std::ostream& out) const {
         URLLinkFrame::GetInformation(out);
         out << description_ << std::endl;
     }

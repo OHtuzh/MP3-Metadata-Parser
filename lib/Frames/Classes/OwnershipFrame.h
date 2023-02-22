@@ -16,7 +16,7 @@ namespace mp3_idv2_4 {
         [[nodiscard]] const std::string& GetDateOfPurchase() const;
         [[nodiscard]] const std::string& GetSeller() const;
 
-        void GetInformation(std::ostream& out) override;
+        void GetInformation(std::ostream& out) const override;
      private:
         TextEncoding encoding_;
         std::string price_paid_;

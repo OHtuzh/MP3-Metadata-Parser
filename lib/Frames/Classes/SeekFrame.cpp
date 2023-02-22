@@ -14,5 +14,5 @@ namespace mp3_idv2_4 {
     uint32_t SeekFrame::GetMinimumOffsetToNextTag() const {
         return minimum_offset_to_next_tag_;
     }
-    void SeekFrame::GetInformation(std::ostream& out) {}
+    void SeekFrame::GetInformation(std::ostream& out) const {}
 }

@@ -68,7 +68,7 @@ namespace mp3_idv2_4 {
         [[nodiscard]] TimeStampFormat GetTimeStampFormat() const noexcept;
         [[nodiscard]] const std::list<Event>& GetEvents() const noexcept;
 
-        void GetInformation(std::ostream& out) override;
+        void GetInformation(std::ostream& out) const override;
      private:
         TimeStampFormat time_stamp_format_;
         std::list<Event> events_;

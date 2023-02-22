@@ -47,7 +47,7 @@ namespace mp3_idv2_4 {
         [[nodiscard]] const std::string& GetIdentification() const;
         [[nodiscard]] const std::list<Channel>& GetChannels() const;
 
-        void GetInformation(std::ostream& out) override;
+        void GetInformation(std::ostream& out) const override;
 
      private:
         std::string identification_;

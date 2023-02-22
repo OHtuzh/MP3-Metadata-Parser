@@ -39,7 +39,7 @@ namespace mp3_idv2_4 {
         [[nodiscard]] ContentType GetContentType() const noexcept;
         [[nodiscard]] const std::list<SynchronisedText>& GetContentDescriptor() const noexcept;
 
-        void GetInformation(std::ostream& out) override;
+        void GetInformation(std::ostream& out) const override;
      private:
         TextEncoding encoding_;
         std::array<uint8_t, 3> language_;

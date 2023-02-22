@@ -31,7 +31,7 @@ namespace mp3_idv2_4 {
         [[nodiscard]] const std::string& GetIdentification() const;
         [[nodiscard]] const std::list<AdjustmentPoint>& GetAdjustmentPoints() const;
 
-        void GetInformation(std::ostream& out) override;
+        void GetInformation(std::ostream& out) const override;
      private:
         InterpolationMethod interpolation_method_;
         std::string identification_;

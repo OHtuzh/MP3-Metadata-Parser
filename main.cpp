@@ -9,8 +9,7 @@ void CreateOutput(const std::list<std::unique_ptr<mp3_idv2_4::Frame>>& frames) {
     std::ofstream out("output.txt");
     for (const auto& frame: frames) {
         if (frame != nullptr) {
-            frame->GetInformation(out);
-            out << std::endl;
+            out << *frame << std::endl;
         }
     }
     out.close();

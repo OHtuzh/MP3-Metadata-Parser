@@ -14,7 +14,7 @@ namespace mp3_idv2_4 {
         [[nodiscard]] bool IsEmbeddedInfoFlag() const;
         [[nodiscard]] uint32_t GetOffsetToNextFlag() const;
 
-        void GetInformation(std::ostream& out) override;
+        void GetInformation(std::ostream& out) const override;
      private:
         uint32_t buffer_size_;
         bool embedded_info_flag_;

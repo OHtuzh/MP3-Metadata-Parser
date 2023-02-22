@@ -22,5 +22,5 @@ namespace mp3_idv2_4 {
     const std::vector<uint8_t>& EncryptionMethodRegistrationFrame::GetEncryptionData() const {
         return encryption_data_;
     }
-    void EncryptionMethodRegistrationFrame::GetInformation(std::ostream& out) {}
+    void EncryptionMethodRegistrationFrame::GetInformation(std::ostream& out) const {}
 }

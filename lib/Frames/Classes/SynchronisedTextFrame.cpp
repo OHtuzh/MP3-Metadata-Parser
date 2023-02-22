@@ -62,7 +62,7 @@ namespace mp3_idv2_4 {
     const std::list<SynchronisedTextFrame::SynchronisedText>& SynchronisedTextFrame::GetContentDescriptor() const noexcept {
         return content_descriptor_;
     }
-    void SynchronisedTextFrame::GetInformation(std::ostream& out) {
+    void SynchronisedTextFrame::GetInformation(std::ostream& out) const {
         for (const auto& synch_text: content_descriptor_) {
             out << synch_text.GetTiming() << " | " << synch_text.GetText() << std::endl;
         }

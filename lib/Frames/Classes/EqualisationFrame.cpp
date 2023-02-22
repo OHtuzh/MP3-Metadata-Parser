@@ -41,5 +41,5 @@ namespace mp3_idv2_4 {
     const std::list<EqualisationFrame::AdjustmentPoint>& EqualisationFrame::GetAdjustmentPoints() const {
         return adjustment_points_;
     }
-    void EqualisationFrame::GetInformation(std::ostream& out) {}
+    void EqualisationFrame::GetInformation(std::ostream& out) const {}
 }

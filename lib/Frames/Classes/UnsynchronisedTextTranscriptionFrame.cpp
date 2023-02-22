@@ -25,7 +25,7 @@ namespace mp3_idv2_4 {
         return content_descriptor_;
     }
 
-    void UnsynchronisedTextTranscriptionFrame::GetInformation(std::ostream& out) {
+    void UnsynchronisedTextTranscriptionFrame::GetInformation(std::ostream& out) const {
         out << content_descriptor_ << std::endl;
     }
 

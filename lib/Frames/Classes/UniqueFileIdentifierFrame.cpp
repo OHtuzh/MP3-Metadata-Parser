@@ -24,5 +24,5 @@ namespace mp3_idv2_4 {
     const std::vector<uint8_t>& UniqueFileIdentifierFrame::GetIdentifier() const {
         return identifier_;
     }
-    void UniqueFileIdentifierFrame::GetInformation(std::ostream& out) {}
+    void UniqueFileIdentifierFrame::GetInformation(std::ostream& out) const {}
 }

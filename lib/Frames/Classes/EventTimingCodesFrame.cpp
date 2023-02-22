@@ -28,6 +28,6 @@ namespace mp3_idv2_4 {
     const std::list<EventTimingCodesFrame::Event>& EventTimingCodesFrame::GetEvents() const noexcept {
         return events_;
     }
-    void EventTimingCodesFrame::GetInformation(std::ostream& out) {}
+    void EventTimingCodesFrame::GetInformation(std::ostream& out) const {}
 
 }

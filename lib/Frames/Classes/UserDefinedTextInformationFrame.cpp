@@ -11,7 +11,7 @@ namespace mp3_idv2_4 {
     const std::string& UserDefinedTextInformationFrame::GetValue() const noexcept {
         return value_;
     }
-    void UserDefinedTextInformationFrame::GetInformation(std::ostream& out) {
+    void UserDefinedTextInformationFrame::GetInformation(std::ostream& out) const {
         TextInformationFrame::GetInformation(out);
         out << value_ << std::endl;
     }

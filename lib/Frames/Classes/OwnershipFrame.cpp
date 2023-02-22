@@ -29,7 +29,7 @@ namespace mp3_idv2_4 {
         return seller_;
     }
 
-    void OwnershipFrame::GetInformation(std::ostream& out) {
+    void OwnershipFrame::GetInformation(std::ostream& out) const {
         out << price_paid_ << std::endl << date_of_purchase_ << std::endl << seller_ << std::endl;
     }
 }

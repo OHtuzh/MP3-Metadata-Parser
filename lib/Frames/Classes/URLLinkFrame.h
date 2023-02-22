@@ -12,7 +12,7 @@ namespace mp3_idv2_4 {
 
         [[nodiscard]] const std::string& GetURL() const noexcept;
 
-        void GetInformation(std::ostream& out) override;
+        void GetInformation(std::ostream& out) const override;
      private:
         std::string url_;
     };

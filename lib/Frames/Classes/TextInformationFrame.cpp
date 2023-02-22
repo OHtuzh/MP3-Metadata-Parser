@@ -19,7 +19,7 @@ namespace mp3_idv2_4 {
     TextEncoding TextInformationFrame::GetBaseEncoding() const noexcept {
         return encoding_;
     }
-    void TextInformationFrame::GetInformation(std::ostream& out) {
+    void TextInformationFrame::GetInformation(std::ostream& out) const {
         out << description_utf8_ << std::endl;
     }
 }

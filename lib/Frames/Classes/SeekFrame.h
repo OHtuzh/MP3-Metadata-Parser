@@ -12,7 +12,7 @@ namespace mp3_idv2_4 {
 
         [[nodiscard]] uint32_t GetMinimumOffsetToNextTag() const;
 
-        void GetInformation(std::ostream& out) override;
+        void GetInformation(std::ostream& out) const override;
      private:
         uint32_t minimum_offset_to_next_tag_;
     };

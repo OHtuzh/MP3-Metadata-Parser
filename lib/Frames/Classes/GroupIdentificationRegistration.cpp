@@ -22,5 +22,5 @@ namespace mp3_idv2_4 {
     const std::vector<uint8_t>& GroupIdentificationRegistration::GetGroupDependentData() const {
         return group_dependent_data_;
     }
-    void GroupIdentificationRegistration::GetInformation(std::ostream& out) {}
+    void GroupIdentificationRegistration::GetInformation(std::ostream& out) const {}
 }

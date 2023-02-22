@@ -22,5 +22,5 @@ namespace mp3_idv2_4 {
     uint64_t PositionSynchronisationFrame::GetPosition() const {
         return position_;
     }
-    void PositionSynchronisationFrame::GetInformation(std::ostream& out) {}
+    void PositionSynchronisationFrame::GetInformation(std::ostream& out) const {}
 }

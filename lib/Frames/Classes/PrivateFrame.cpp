@@ -16,5 +16,5 @@ namespace mp3_idv2_4 {
     const std::vector<uint8_t>& PrivateFrame::GetPrivateData() const {
         return private_data_;
     }
-    void PrivateFrame::GetInformation(std::ostream& out) {}
+    void PrivateFrame::GetInformation(std::ostream& out) const {}
 }

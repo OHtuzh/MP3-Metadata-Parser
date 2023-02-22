@@ -15,7 +15,7 @@ namespace mp3_idv2_4 {
         [[nodiscard]] uint32_t GetLanguage() const;
         [[nodiscard]] const std::string& GetActualText() const;
 
-        void GetInformation(std::ostream& out) override;
+        void GetInformation(std::ostream& out) const override;
      private:
         TextEncoding encoding_;
         uint32_t language_;

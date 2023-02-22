@@ -14,7 +14,7 @@ namespace mp3_idv2_4 {
         [[nodiscard]] const std::string& GetUrl() const;
         [[nodiscard]] const std::string& GetIdAndAdditionalData() const;
 
-        void GetInformation(std::ostream& out) override;
+        void GetInformation(std::ostream& out) const override;
      private:
         std::string frame_identifier_;
         std::string url_;

@@ -14,7 +14,7 @@ namespace mp3_idv2_4 {
         [[nodiscard]] const std::string& GetOwnerIdentifier() const;
         [[nodiscard]] const std::vector<uint8_t>& GetPrivateData() const;
 
-        void GetInformation(std::ostream& out) override;
+        void GetInformation(std::ostream& out) const override;
      private:
         std::string owner_identifier_;
         std::vector<uint8_t> private_data_;

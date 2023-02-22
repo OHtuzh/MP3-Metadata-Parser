@@ -29,5 +29,5 @@ namespace mp3_idv2_4 {
     const std::string& LinkedInformation::GetIdAndAdditionalData() const {
         return id_and_additional_data_;
     }
-    void LinkedInformation::GetInformation(std::ostream& out) {}
+    void LinkedInformation::GetInformation(std::ostream& out) const {}
 }

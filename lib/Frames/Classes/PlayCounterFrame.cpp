@@ -14,6 +14,6 @@ namespace mp3_idv2_4 {
     size_t PlayCounterFrame::GetCounter() const {
         return counter_;
     }
-    void PlayCounterFrame::GetInformation(std::ostream& out) {}
+    void PlayCounterFrame::GetInformation(std::ostream& out) const {}
 
 }

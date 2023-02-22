@@ -13,7 +13,7 @@ namespace mp3_idv2_4 {
         [[nodiscard]] TimeStampFormat GetTimeStampFormat() const;
         [[nodiscard]] uint64_t GetPosition() const;
 
-        void GetInformation(std::ostream& out) override;
+        void GetInformation(std::ostream& out) const override;
      private:
         TimeStampFormat time_stamp_format_;
         uint64_t position_;

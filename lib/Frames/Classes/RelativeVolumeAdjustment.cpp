@@ -55,5 +55,5 @@ namespace mp3_idv2_4 {
     const std::list<RelativeVolumeAdjustment::Channel>& RelativeVolumeAdjustment::GetChannels() const {
         return channels_;
     }
-    void RelativeVolumeAdjustment::GetInformation(std::ostream& out) {}
+    void RelativeVolumeAdjustment::GetInformation(std::ostream& out) const {}
 }

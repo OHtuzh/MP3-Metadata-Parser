@@ -27,7 +27,7 @@ namespace mp3_idv2_4 {
     const std::string& TermsOfUseFrame::GetActualText() const {
         return actual_text_;
     }
-    void TermsOfUseFrame::GetInformation(std::ostream& out) {
+    void TermsOfUseFrame::GetInformation(std::ostream& out) const {
         out << actual_text_ << std::endl;
     }
 }

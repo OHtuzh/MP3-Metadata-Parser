@@ -13,7 +13,7 @@ namespace mp3_idv2_4 {
 
         [[nodiscard]] const std::vector<uint8_t>& GetBinaryData() const noexcept;
 
-        void GetInformation(std::ostream& out) override;
+        void GetInformation(std::ostream& out) const override;
      private:
         std::vector<uint8_t> binary_data_;
     };

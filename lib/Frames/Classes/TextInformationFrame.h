@@ -12,7 +12,7 @@ namespace mp3_idv2_4 {
         [[nodiscard]] const std::string& GetDescriptionUTF8() const noexcept;
         [[nodiscard]] TextEncoding GetBaseEncoding() const noexcept;
 
-        void GetInformation(std::ostream& out) override;
+        void GetInformation(std::ostream& out) const override;
      private:
         TextEncoding encoding_;
         std::string description_utf8_;

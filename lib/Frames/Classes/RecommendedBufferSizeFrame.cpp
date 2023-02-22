@@ -29,5 +29,5 @@ namespace mp3_idv2_4 {
     uint32_t RecommendedBufferSizeFrame::GetOffsetToNextFlag() const {
         return offset_to_next_flag_;
     }
-    void RecommendedBufferSizeFrame::GetInformation(std::ostream& out) {}
+    void RecommendedBufferSizeFrame::GetInformation(std::ostream& out) const {}
 }

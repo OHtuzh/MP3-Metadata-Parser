@@ -67,7 +67,7 @@ namespace mp3_idv2_4 {
         return seller_logo_;
     }
 
-    void CommercialFrame::GetInformation(std::ostream& out) {
+    void CommercialFrame::GetInformation(std::ostream& out) const {
         out << price_string_ << std::endl << valid_until_ << std::endl << contact_url_ << std::endl << name_of_seller_
             << std::endl << description_ << std::endl;
     }
